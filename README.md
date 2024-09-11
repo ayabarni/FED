@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Aya Barni
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw piste
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Surface plane
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.dunkin.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/home-pagina.png" width="375px" alt="home pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/jobs-pagina.png" width="375px" alt="characters pagina">
  
 </details>
 
@@ -56,7 +56,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Eerst testte ik de beperkte mogelijkheden. Ik begon met het testen van een bril met onscherpe glazen. Ik probeerde te typen met deze bril, maar ik kon nooit typen, maar lezen ging makkelijker dan typen, maar ik kon nog steeds moeilijk lezen. Het was als een blinddoek voor het oog.
+  Daarna probeerde ik typen met elastiekjes.
+  Ik kon typen terwijl mijn vingers gebonden waren, maar als ik de elastiekjes meer dan twee keer om mijn vingers wikkelde, kon ik mijn vingers nooit onder controle houden.
+  Daarna heb ik de hand vibrator niet meer geprobeerd. Ik wilde gewoon zien hoe het de studenten beïnvloedde, want de hand bleef trillen en ik zag niemand van hen die kon typen als ze hun handen onder controle hadden.
+
+  Toegankelijkheidstest:
+  Screenreaders:
+  Tijdens het testen van de toegankelijkheid gebruikte ik de schermlezer. Het geluid was goed en ook duidelijk, maar het las in het Engels en ik wist niet hoe ik de taal in de instellingen kon veranderen. 
+  Ik kon navigeren tussen de koppen op de pagina, ik heb het een paar keer getest en het zei de koppen niet elke keer in de juiste volgorde.
+  Ik kon ook door de links navigeren door op de letter k te drukken en elke link liet zien wat het bevatte.
+
+   
 
 </details>
 
@@ -68,13 +79,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/frame 1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/frame 2.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <!-- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel"> -->
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <!-- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
 
