@@ -1,9 +1,396 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+@font-face {
+	font-family: "Dunkin Sans";
+	src: url("../dunkin-fonts/Dunkin-Sans.otf") format("otf");
+	font-weight: normal;
+	font-style: normal;
+	font-display: fallback;
 }
+
+@font-face {
+	font-family: "Dunkin Sans";
+	src: url("../dunkin-fonts/Dunkin-Bold.otf") format("otf");
+	font-weight: bold;
+	font-style: normal;
+	font-display: fallback;
+
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	/* startje */
+	--color-text: #111;
+	--color-background: #eee;
+
+
+}
+
+
+
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	font-family: "Dunkin Sans";
+	font-weight: normal;
+	background-color: #e9c1d7;
+
+}
+
+/* header {} */
+header {
+	width: 100%;
+	top: -2.8px;
+	position: relative;
+
+
+
+}
+
+header div:nth-of-type(1) {
+	background-color: #ff6e0c;
+	/* background-color:  var(--coral); */
+	/* margin: */
+	width: 100%;
+	height: 2.8em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+header p {
+	font-family: 'Dunkin Sans Book', sans-serif;
+	color: white;
+	font-size: 13px;
+}
+
+header nav ul {
+	list-style: none;
+	text-decoration: underline;
+
+}
+
+header div:nth-of-type(2) {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	gap: 0.5em;
+	width: 100%;
+	height: 4.5em;
+	border-bottom: solid 1px rgb(206, 206, 206);
+	position: sticky;
+	top: 0px;
+
+
+	/* z-index: 100; */
+
+}
+
+
+
+header div:nth-of-type(2) button {
+	border: none;
+	outline: none;
+	border-radius: 3.74em;
+	width: 12%;
+	height: 40%;
+}
+
+header div:nth-of-type(2) button img {
+	height: auto;
+	/* background-color: red; */
+
+}
+
+header div:nth-of-type(2) a {
+	width: 40%;
+	height: 50%;
+	background-color: white;
+
+}
+
+
+header div:nth-of-type(2) a img {
+	width: 100%;
+	height: 100%;
+
+
+}
+
+
+header div:nth-of-type(2) button:nth-of-type(2) {
+	border: none;
+	outline: none;
+	border-radius: 3.74em;
+	width: 12%;
+	height: 50%;
+}
+
+
+/* header div nav ul li{
+	text-decoration: none;
+} */
+/* header div:nth-of-type(2) img:nth-of-type(2) {
+	width: 50%;
+
+} */
+
+
+
+/* main */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+main>section {
+	width: 89%;
+}
+
+main section:first-of-type {
+	background-color: #ddbd8e;
+	/* width: 100%; */
+	height: 24em;
+	/* padding-right: 20em ; */
+	border-radius: 1.5rem;
+	background-image: url("../images/koffie_background.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+main section h2 {
+	text-align: center;
+	color: #fbf8f8;
+	/* background: red; */
+	font-size: 3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	/* margin-top: 0; */
+	word-spacing: -0.5em;
+	line-height: 1em
+}
+
+
+main section:nth-of-type(2) {
+	/* width: 100%; */
+	height: 11rem;
+	background-color: #f20c90;
+	border-radius: 1.5rem;
+	margin-top: 23px;
+	margin-bottom: 23px;
+
+}
+
+main section:nth-of-type(2) h2 {
+	font-size: 3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	/* background-color: #ff6e0c */
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+
+
+}
+
+main section:nth-of-type(2) p {
+	color: white;
+	margin-left: 20px;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+/* main section:nth-of-type(2) button {
+} */
+
+
+
+
+
+
+
+
+
+main section:nth-of-type(3) {
+	/* width: 100%; */
+	height: 24em;
+	border-radius: 1.5rem;
+	background-color: #99d6ea;
+	background-image: url(../images/gluten_free.png);
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-position: 45% 5%;
+
+	/* background-position: center; */
+}
+
+main section:nth-of-type(4) h3 {
+	color: #f20c90;
+	font-weight: bold;
+	text-transform: uppercase;
+	/* font-weight: 700; */
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+
+
+}
+
+span {
+	color: #ff6e0c;
+}
+
+
+/* main section:nth-of-type(4) {
+	/* width: 100%; */
+	/* background: green; */
+
+/* } */
+
+
+main section:nth-of-type(4) ul {
+	/* width: 89%; */
+	/* height: vh; */
+	/* margin-left: 1rem; */
+	background-color: #e01488;
+	border-radius: 1.5rem;
+	list-style: none;
+	padding: 0;
+}
+
+main section:nth-of-type(4) ul li {
+	/* width: 89%; */
+	display: grid;
+	grid-template-columns: 60px 1fr;
+	grid-column-gap: 5.61em;
+	grid-row-gap: 3.27em;
+	align-items: flex-start;
+	background-color: #86b136;
+	border-radius: 1.5rem;
+	margin-bottom: 20px;
+	/* margin-left: 0; */
+	padding: 20px;
+	gap: 20px;
+}
+
+main section:nth-of-type(4) ul li div:first-child {
+	/* width: 89%; */
+	height: 60%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	font-size: 24px;
+	background-color: #f20c90;
+	border-radius: 3rem;
+
+}
+
+main section:nth-of-type(4) ul li h3 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+main section:nth-of-type(4) ul li p {
+	font-size: 10px;
+}
+
+main section:nth-of-type(4) a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 20px auto;
+	padding: 15px 30px;
+	color: white;
+	background-color: #ff6e0c;
+	border-radius: 7.48em;
+
+}
+
+
+main section:nth-of-type(5) {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	
+	background-image: url(../images/mobile_app.svg);
+	background-size: 250%;
+	background-repeat: no-repeat;
+	background-position: 50% 500%;
+	background-color: #71c5e8;
+	border-radius: 1.5rem;
+	height: 40rem;
+	z-index: 3;
+}
+
+
+main section:nth-of-type(5) h4 {
+	text-transform: uppercase;
+	color: white;
+	/* font-size: ; */
+
+
+}
+
+main section:nth-of-type(5) p {
+	color: white;
+	text-align: center;
+	
+}
+
+
+
+ /* main section:nth-of-type(4) div {
+	background-color: #ff6e0c;
+	height: 30vh;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	transform: translateY(10em) 
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -13,11 +400,6 @@
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-}
 
 
 
@@ -28,4 +410,3 @@
 /****************/
 
 /* jouw code */
-
