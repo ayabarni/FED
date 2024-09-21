@@ -91,7 +91,8 @@ header div:nth-of-type(2) {
 	height: 4.5em;
 	border-bottom: solid 1px rgb(206, 206, 206);
 	position: sticky;
-	top: 0px;
+	/* z-index: 100; */
+	/* top: 0px; */
 
 
 	/* z-index: 100; */
@@ -237,7 +238,7 @@ main section:nth-of-type(3) {
 	background-image: url(../images/gluten_free.png);
 	background-size: 120%;
 	background-repeat: no-repeat;
-	background-position: 45% 5%;
+	background-position: 50% 2em;
 
 	/* background-position: center; */
 }
@@ -248,7 +249,7 @@ main section:nth-of-type(4) h3 {
 	text-transform: uppercase;
 	/* font-weight: 700; */
 	font-size: 3em;
-	font-weight: bold;
+	/* font-weight: bold; */
 	line-height: 1em;
 
 
@@ -370,13 +371,125 @@ main section:nth-of-type(5) p {
 }  */
 
 
+/* section zes */
 
 
+main section:nth-of-type(6) {
+	position: relative;
+	/* padding: 20px; */
+	
+}
 
+main section:nth-of-type(6) article:first-of-type {
+	/* position: relative; */
+	/* margin-bottom: 10px; */
+	/* margin-right: 20px; */
+	color: #e01488;
+	margin-top: 33rem;
+	font-size: 2.5em;
+	font-weight: bold;
+	/* font-family: ; */
+	text-transform: uppercase;
+	/* text-align:justify; */
+	/* font-family: 'Dunkin Sans Book', sans-serif; */
+}
 
+main section:nth-of-type(6) article:first-of-type::before {
+	content: '';
+	position: absolute;
+	top: -90px;
+	left: 50%;
+	transform: translateX(-50%);
 
+	width: 100%; 
+	height: 100vh;
+/* width: 300px;
+	height: 300px; */
+	background-image: url('../images/heropening.png');
+	background-repeat: no-repeat;
+	background-size: 800px;
+	/* background-size: cover; */
+	background-position: 48% 30%;
+	z-index: -1;
+	border: #86b136;
+	margin-top: 0px;
+	padding-top: 0px;
+	/* border-radius: 50%; */
+	border: #e01488;
 
+}
 
+main section:nth-of-type(6) article:first-of-type::after {
+	content: '';
+	position: absolute;
+	top: 10em;
+	right: 20px;
+	width: 100px;
+	height: 100px;
+	background-image: url('../images/eerste_icon.png');
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-color: #ff6e0c;
+	background-position: center;
+	/* transform: translateX(-50%); */
+	/* padding: 1em; */
+	/* top: 0px; */
+	border-radius: 50%;
+
+}
+
+main section:nth-of-type(6) p {
+	color: #aaa;
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+ 
+
+main section:nth-of-type(6) a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 20px auto;
+	padding: 15px 30px;
+	color: white;
+	background-color: #ff6e0c;
+	border-radius: 7.48em;
+}
+
+main section:nth-of-type(6) article:last-of-type{
+	color: #e01488;
+	margin-top: 33rem;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+main section:nth-of-type(6) article:last-of-type::before {
+	content: '';
+	position: absolute;
+	top: 10em;
+	/* top: -200px; */
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 100%; 
+	height: 100vh;
+/* width: 300px;
+	height: 300px; */
+	background-image: url('../images/gluten.png');
+	background-repeat: no-repeat;
+	background-size: 800px;
+	/* background-size: cover; */
+	background-position: 48% 30%;
+	z-index: -1;
+	border: #86b136;
+	margin-top: 0px;
+	padding-top: 0px;
+	/* border-radius: 50%; */
+	border: #e01488;
+
+}
 
 
 
