@@ -13,6 +13,26 @@ function toggleMenu() {
     deBody.classList.toggle("navOpen")
 }
 
+// tweede pagina menu
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.querySelector('.hamburger-btn');
+    const menu = document.querySelector('nav.menu');
+
+    menuBtn.addEventListener('click', function() {
+        menu.classList.toggle('open'); // Open of sluit het menu
+        menuBtn.classList.toggle('active');
+    });
+});
+
+// var menuBtn = document.querySelector(".hamburger-btn")
+// var menu = document.querySelector("nav.menu")
+
+// menuBtn.addEventListener("click", function() {
+//     menu.classList.toggle("open")} )
+
+
+
 
 // news carousel
 

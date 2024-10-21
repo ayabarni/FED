@@ -47,7 +47,7 @@ body {
 	margin: auto;
 	font-family: "Dunkin Sans";
 	font-weight: normal;
-	
+
 }
 
 body.navOpen {
@@ -161,6 +161,7 @@ header nav {
 	text-transform: uppercase;
 
 }
+/* menu knop */
 
 header nav.toonMenu {
 	transform: translateY(0%);
@@ -205,12 +206,12 @@ header nav ul li:last-of-type ul li {
 	border-radius: 100%;
 	bottom: 25em;
 	position: relative;
-    bottom: -7rem;
-    z-index: 2000;
+	bottom: -7rem;
+	z-index: 2000;
 }
 
-	/* cursor: pointer; */
-	/* gap: 10px; */
+/* cursor: pointer; */
+/* gap: 10px; */
 
 
 header nav ul li:last-of-type ul li a {
@@ -246,17 +247,18 @@ header nav ul li a {
 
 }
 
-header nav>div:last-child{
-	
-	background-color:#f5f5f5;
-	
-	height: 25%; 
-    border-top-left-radius: 80%; 
-    border-top-right-radius: 80%;
-    width: 150%; 
-    position: absolute; 
+header nav>div:last-child {
+
+	background-color: #f5f5f5;
+
+	height: 25%;
+	border-top-left-radius: 80%;
+	border-top-right-radius: 80%;
+	width: 150%;
+	position: absolute;
 	bottom: 0;
 }
+
 header p {
 	margin: 0;
 	position: relative;
@@ -264,7 +266,10 @@ header p {
 	justify-content: center;
 	align-items: center;
 }
+/* nav-button */
+/* header nav span{
 
+} */
 
 /* header div nav ul li{
 	text-decoration: none;
@@ -1209,7 +1214,7 @@ body#jobs {
 body#jobs header {
 	width: 100%;
 	height: 6rem;
-	background-color:var(--color-background);
+	background-color: var(--color-background);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -1227,14 +1232,84 @@ body#jobs header img {
 	/* padding: 0 0 0 -10rem; */
 }
 
+
+/* menu */
 body#jobs header button {
-	width: 3rem;
-	height: 3rem;
+	/* width: 3rem;
+	height: 3rem; */
 	align-self: center;
-	background-color: #512d00;
+	background-color: #b9b2ab;
+
+	/* background: none; */
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+} 
+body#jobs .hamburger-btn {
+    background-color: transparent; /* Geen achtergrondkleur */
+    border: none; /* Geen rand */
+    cursor: pointer; /* Cursor wordt een handje bij hover */
+    padding: 10px; /* Ruimte rond de knop */
+    transition: transform 0.3s ease; 
 
 }
+body#jobs header .hamburger-btn svg{
+	color: #111111e0;
+	/* font-size: 2em; */
+	/* aspect-ratio:1/1; */
+	fill: #333; /* Donkergrijze kleur voor het pictogram */
+    width: 30px; /* Breedte van het pictogram */
+    height: 30px; /* Hoogte van het pictogram */
+}
+	
+body#jobs header .hamburger-btn.active svg {
+    fill: #ff3399;
+}
+body#jobs header.hamburger-btn:hover {
+    transform: scale(1.1); /* Maak de knop iets groter bij hover */
+}
 
+body#jobs header nav.menu{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #c72f2f;
+	box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+	transform: translateX(100%);
+	transition: transform 0.3s ease-in-out;
+	padding-top: 80px;
+
+}
+body#jobs header nav.menu ul{
+	padding: 0;
+}
+body#jobs header nav.menu li{
+	margin: 20px 0;
+}
+body#jobs header nav.menu li a{
+	font-size: 1em;
+	display: block;
+	padding: 10px 20px;
+	transition: background-color 0.2s;
+
+}
+body#jobs header nav.menu li a:hover{
+	background-color: #ff3399;
+	color: white;
+
+}
+body#jobs header nav.menu.open{
+	transform: translateX(0);
+}
+.hidden{
+	display: none;
+}
+
+/* eind menu */
+
+/* main staart */
 body#jobs main {
 	display: flex;
 	flex-direction: column;
@@ -1252,7 +1327,8 @@ body#jobs main section:first-of-type {
 	height: 30em;
 	background-image: url(../images/eats-.png);
 	background-repeat: no-repeat;
-	background-position: -26em -6em;
+	background-position: -28em -6.5em;
+	filter: brightness(60%)
 	/* background-size: 10%; */
 	/* background-size: 0em 0em 20em 25em; */
 	/* background-position: 0em 0em 5em 0em; */
@@ -1260,10 +1336,11 @@ body#jobs main section:first-of-type {
 }
 
 body#jobs main section:first-of-type h2 {
-	
-
 	font-size: 2.5em;
-	margin-top: 6em;
+	margin-top: 3.6em;
+	text-wrap: balance;
+	text-transform: none;
+	line-height: 1.3em;
 
 
 }
@@ -1277,7 +1354,7 @@ body#jobs main section:nth-of-type(2) {
 
 body#jobs main section:nth-of-type(2) h2 {
 	margin: 0px;
-	color:  rgb(198, 54, 99);
+	color: rgb(198, 54, 99);
 	/* font-size: ; */
 
 }
@@ -1293,6 +1370,7 @@ body#jobs main section:nth-of-type(2) a {
 	border-radius: 0.5em;
 	text-transform: capitalize;
 	padding: 10px 13px;
+
 
 }
 
@@ -1341,7 +1419,7 @@ body#jobs main section:nth-of-type(3) ul {
 	padding: 0;
 }
 
-body#jobs main section:nth-of-type(3) ul li{
+body#jobs main section:nth-of-type(3) ul li {
 	width: 100%;
 	height: 100%;
 }
@@ -1372,28 +1450,31 @@ body#jobs main section:nth-of-type(3) ul li img {
 
 /* rgb(198, 54, 99) */
 
-body#jobs main section:nth-of-type(4){
+body#jobs main section:nth-of-type(4) {
 	display: flex;
 	flex-direction: column;
 	gap: 3.5rem;
 
 }
-body#jobs main section:nth-of-type(4) div{
+
+body#jobs main section:nth-of-type(4) div {
 	background-image: none;
 	height: 20%;
 }
- 
-body#jobs main section:nth-of-type(4) div::before div::after{
+
+body#jobs main section:nth-of-type(4) div::before div::after {
 	background: none;
 	background-image: none;
 }
-body#jobs main section:nth-of-type(4) div::after{
+
+body#jobs main section:nth-of-type(4) div::after {
 	background: none;
 	background-image: none;
 
 
 }
-body#jobs main section:nth-of-type(4) p:first-child{
+
+body#jobs main section:nth-of-type(4) p:first-child {
 	color: rgb(198, 54, 99);
 	text-align: center;
 	font-size: 2em;
@@ -1404,28 +1485,30 @@ body#jobs main section:nth-of-type(4) p:first-child{
 }
 
 
-body#jobs main section:nth-of-type(4) div p,p{
+body#jobs main section:nth-of-type(4) div p,
+p {
 	text-align: center;
 }
-body#jobs main section:nth-of-type(4) div p:first-of-type{
+
+body#jobs main section:nth-of-type(4) div p:first-of-type {
 	color: rgb(198, 54, 99);
 	font-weight: bold;
 	font-size: 1.5em;
 }
 
-body#jobs main section:nth-of-type(4) div p:nth-of-type(2){
+body#jobs main section:nth-of-type(4) div p:nth-of-type(2) {
 	color: var(--color-text);
 	font-size: 0.99em;
 }
 
-body#jobs main section:nth-of-type(4) div img{
+body#jobs main section:nth-of-type(4) div img {
 	width: 8.5em;
 	height: auto;
 	position: relative;
 	right: -6em;
 }
 
-body#jobs main section:nth-of-type(5) p:first-child{
+body#jobs main section:nth-of-type(5) p:first-child {
 	color: rgb(198, 54, 99);
 	font-size: 1.9em;
 	font-weight: bold;
@@ -1433,13 +1516,14 @@ body#jobs main section:nth-of-type(5) p:first-child{
 	text-wrap: balance;
 	text-align: left;
 }
-body#jobs main section:nth-of-type(5) p:nth-of-type(2){
+
+body#jobs main section:nth-of-type(5) p:nth-of-type(2) {
 	text-align: left;
 	color: var(--color-text);
-    
+
 }
 
-body#jobs main section:nth-of-type(5) a{
+body#jobs main section:nth-of-type(5) a {
 	width: 15rem;
 	height: 3rem;
 	border-radius: 0.5em;
@@ -1454,20 +1538,21 @@ body#jobs main section:nth-of-type(5) a{
 }
 
 
-body#jobs main section:nth-of-type(5) div, body#jobs main section:nth-of-type(5) div::after{
+body#jobs main section:nth-of-type(5) div,
+body#jobs main section:nth-of-type(5) div::after {
 	background-image: none;
 	background-color: transparent;
-	
-	
+
+
 }
 
-body#jobs main section:nth-of-type(5) div{
+body#jobs main section:nth-of-type(5) div {
 	padding: 20px;
 	width: 100%;
 	height: 20rem;
 	box-shadow: inset 0em 0em 0em 0.1em #dddbdb;
 	border-radius: 0.5em;
-	
+
 
 }
 
@@ -1476,36 +1561,42 @@ body#jobs main section:nth-of-type(5) div p:first-child {
 	font-size: 20px;
 	word-spacing: -3px;
 }
-body#jobs main section:nth-of-type(5) div ul{
+
+body#jobs main section:nth-of-type(5) div ul {
 	padding: 0%;
 	display: flex;
 	flex-direction: column;
-    gap: 0.8em;
+	gap: 0.8em;
 }
 
-body#jobs main section:nth-of-type(5) div ul li{
+body#jobs main section:nth-of-type(5) div ul li {
 	list-style: none;
 	text-align: left;
-	
+
 
 
 }
 
-body#jobs footer{
-	height: 35em;
-	background-color:  #512d00;
+body#jobs footer {
+	height: 28em;
+	background-color: rgba(62, 52, 47, 1);
 
-	
+
+
 }
-body#jobs footer::before{
+
+body#jobs footer::before {
 	display: none;
 }
 
-body#jobs footer>img{
+body#jobs footer>img {
 	width: 40%;
-    height: auto;
-	background-color: #512d00;
-	/* margin-top: -4em; */
+	height: auto;
+	/* margin-top: 4em; */
+
+	/* 11 */
+	/* margin-bottom: 2em; */
+
 }
 
 body#jobs footer>ul:first-of-type {
@@ -1513,19 +1604,42 @@ body#jobs footer>ul:first-of-type {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 3em;
 	padding: 0;
 	height: fit-content;
 	background-color: transparent;
-	padding-top: 1em;
+	padding-top: 4em;
+	gap: 1.5em;
+	/* 11 */
+	
 }
 
-body#jobs footer>ul:first-of-type li{
+body#jobs footer>ul:first-of-type li {
 	height: 1em;
 	background-color: transparent;
 
+/* 11 */
+	/* display: flex; */
+	gap: 3em;
+
+
 }
 
-body#jobs footer>ul:first-of-type li a{
-	font: 18px;
+body#jobs footer>ul:first-of-type li a {
+	/* font: 18em; */
+	font-weight: normal;
+	color: white;
+	font-size: 1em;
+	text-transform: none;
+
+}
+body#jobs footer>ul:first-of-type li:last-of-type {
+	font-size: 1em;
+}
+body#jobs footer>ul:first-of-type li:last-of-type ul{
+	/* padding: 0%; */
+	gap: 0em
+}
+
+svg {
+	fill: white;
 }
