@@ -1,0 +1,1215 @@
+/* header {} */
+header {
+	width: 100%;
+	position: sticky;
+	top: -2.5em;
+	z-index: 1000;
+}
+
+header p {
+	background-color: var(--color-background-main-button);
+	width: 100%;
+	height: 3em;
+	text-align: center;
+	font-family: 'Dunkin Sans Book', sans-serif;
+	color: var(--white-font-color);
+	font-size: 0.81em;
+	position: relative;
+	z-index: 1001;
+}
+
+header nav ul {
+	list-style: none;
+	text-decoration: underline;
+
+}
+
+header div:nth-of-type(1) {
+	background-color: var(--color-background-nav);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	gap: 0.5em;
+	width: 100%;
+	height: 4.5em;
+	border-bottom: solid 1px rgb(206, 206, 206);
+	position: relative;
+	z-index: 1001;
+}
+
+header div:nth-of-type(1) button {
+	border: none;
+	outline: none;
+	border-radius: 3.74em;
+	width: 12%;
+	height: 40%;
+}
+
+header div:nth-of-type(1) button img {
+	height: auto;
+}
+
+header div:first-of-type a {
+	width: 40%;
+	height: 50%;
+}
+
+header div:nth-of-type(1) a img {
+	width: 100%;
+	height: 100%;
+
+
+}
+
+header div:first-of-type button:nth-of-type(2) {
+	border: none;
+	outline: none;
+	border-radius: 3.74em;
+	width: 12%;
+	height: 50%;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateY(100%);
+	border-radius: 50% 50% 0% 0% / 20% 20% 0% 0%;
+	transition: 1.5s;
+	Z-index: 1000;
+	background-color: var(--color-background-nav);
+	height: 100%;
+	text-transform: uppercase;
+
+}
+
+/* menu knop */
+
+header nav.toonMenu {
+	transform: translateY(0%);
+	border-radius: 0;
+}
+
+header nav ul {
+	margin: 0;
+	text-decoration: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5em;
+	align-items: center;
+
+
+}
+
+/* header nav ul li {
+	gap: 10rem;
+} */
+
+/* nav laatste li */
+
+header nav ul li:last-of-type {
+	background-color: transparent;
+}
+
+Header nav ul li:last-of-type ul {
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+
+}
+
+header nav ul li:last-of-type ul li {
+	background-color: var(--color-background-nav);
+	width: 3em;
+	height: 3em;
+	border-radius: 100%;
+	bottom: 25em;
+	position: relative;
+	bottom: -7em;
+	z-index: 2000;
+}
+
+/* cursor: pointer; */
+/* gap: 10px; */
+
+
+header nav ul li:last-of-type ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+}
+
+header nav ul li:last-of-type ul li img {
+	width: auto;
+	height: 0.8em;
+}
+
+/* nav laatste li */
+
+header nav ul li a {
+	font-size: 2em;
+	color: var(--color-slider-text);
+	text-decoration: none;
+	font-family: "Dunkin Sans";
+	font-weight: bold;
+}
+
+header nav>div:last-child {
+	background-color: var(--color-background);
+	height: 25%;
+	border-top-left-radius: 80%;
+	border-top-right-radius: 80%;
+	width: 150%;
+	position: absolute;
+	bottom: 0;
+}
+
+header p {
+	margin: 0;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* nav-button */
+/* header nav span{
+
+} */
+
+/* header div nav ul li{
+	text-decoration: none;
+} */
+/* header div:nth-of-type(2) img:nth-of-type(2) {
+	width: 50%;
+
+} */
+
+
+
+/* menubutton */
+#menuButton {
+    background-color: var(--color-background);
+    /* border: none; */
+    /* cursor: pointer; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; */
+	display: grid;
+	grid-template-rows: 1fr;
+	place-items: center;
+	padding: 0;
+	width: 4.5em;
+	height: 3em;
+	
+}
+
+#menuButton span {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	border-radius: 0.3em;
+	display: block;
+	width: 1.4em;
+	height: 0.1em;
+	background-color: #000000;
+	transition: 0.4s;
+} 
+#menuButton span:first-of-type{
+	transform: translateY(-0.4em);
+	transform-origin: right;
+}
+
+#menuButton span:last-of-type{
+	transform: translateY(0.4em);
+	transform-origin: left;
+}
+#menuButton.navOpen span:first-of-type{
+	transform: translateY(-0.4em) scaleX(0);
+}
+#menuButton.navOpen span:last-of-type{
+	transform: translateY(0.4em) scaleX(0);
+
+}
+#menuButton.navOpen span:nth-of-type(2){
+	transform: rotate(45deg);
+}
+#menuButton.navOpen span:nth-of-type(3){
+	transform: rotate(-45deg);
+}
+
+
+
+
+/* header#menuButton{
+
+} */
+
+/* eindheader */
+/* main */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2em;
+	gap: 4em;
+}
+
+main>section {
+	width: 89%;
+}
+
+main>section:first-of-type section:first-of-type {
+	position: relative;
+	background-color: #ddbd8e;
+	height: 24em;
+	border-radius: 1.5em;
+	background-image: url("../images/koffie_background.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+}
+
+
+main section h2 {
+	text-align: center;
+	color: var(--white-font-color);
+	font-size: var(--font-size-h2);
+	font-weight: bold;
+	text-transform: uppercase;
+	word-spacing: -0.5em;
+	line-height: 1em;
+}
+
+main>section:first-of-type section:first-of-type img {
+	position: absolute;
+	height: auto;
+}
+
+main>section:first-of-type section:first-of-type img:first-of-type {
+	width: 53%;
+	z-index: 3;
+	left: calc(50% - 53%/2);
+	top: 40%;
+	animation-name: firtCup-showing;
+	animation-duration: 0.7s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+}
+
+@keyframes firtCup-showing {
+	0% {
+		transform: scale(0);
+
+	}
+
+	100% {
+		transform: scale(1);
+
+	}
+}
+
+main>section:first-of-type section:first-of-type img:nth-of-type(2) {
+	z-index: 2;
+	width: 33%;
+	left: 5%;
+	top: 55%;
+	animation-name: secondCup-showing;
+	animation-duration: 0.7s;
+	animation-delay: 3.7s;
+	animation-fill-mode: both;
+	transform-origin: right;
+
+
+
+}
+
+@keyframes secondCup-showing {
+	0% {
+		transform: scale(0);
+
+	}
+
+	100% {
+		transform: scale(1);
+
+	}
+}
+
+main>section:first-of-type section:first-of-type img:nth-of-type(3) {
+	z-index: 2;
+	width: 33%;
+	left: 63%;
+	top: 55%;
+	animation-name: thirdCup-showing;
+	animation-duration: 0.7s;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	transform-origin: left;
+
+}
+
+@keyframes thirdCup-showing {
+	0% {
+		transform: scale(0);
+
+	}
+
+	100% {
+		transform: scale(1);
+
+
+	}
+
+}
+
+main>section:first-of-type section:nth-of-type(2) {
+	height: 12em;
+	background-color: var(--color-background-bestel);
+	border-radius: 1.5em;
+	margin-top: 1.4em;
+	margin-bottom: 1.4em;
+	position: relative;
+	padding: 1.5em 1em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 0.5em;
+}
+
+main>section:first-of-type section:nth-of-type(2) h2 {
+
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--white-font-color);
+	margin: 0;
+	padding: 0;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	line-height: normal;
+}
+
+main>section:first-of-type section:nth-of-type(2) p {
+	color: var(--white-font-color);
+	margin: 0;
+	font-size: 12px;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+main>section:first-of-type section:nth-of-type(2) button {
+	height: 3.2em;
+	border-radius: 0.8em;
+	border: none;
+	font-family: "Dunkin Sans";
+	font-weight: bold;
+}
+
+main>section:first-of-type section:nth-of-type(2) button:first-of-type {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	color: var(--secondary-font-color);
+	background-color: var(--color-background-secondary-button);
+}
+
+main>section:first-of-type section:nth-of-type(2) button:last-of-type {
+	color: var(--white-font-color);
+	background-color: #f950ad;
+
+}
+
+main>section:first-of-type section:nth-of-type(3) {
+	height: 24em;
+	border-radius: 1.5em;
+	background-color: #99d6ea;
+	background-image: url(../images/gluten_free.png);
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-position: 50% 2em;
+}
+
+main>section:first-of-type section:nth-of-type(3) h2 {
+	margin-top: 0.5em;
+}
+
+
+main section:nth-of-type(2) h3 {
+	color: var(--secondary-font-color);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: var(--font-size-h3);
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+main section:nth-of-type(2) h3 span {
+	color: var(--main-font-color);
+}
+
+/* main section:nth-of-type(4) {
+	/* width: 100%; */
+/* background: green; */
+
+/* } */
+
+
+main section:nth-of-type(2) ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+main section:nth-of-type(2) ul li {
+	width: 100%;
+	height: fit-content;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 60px 1fr;
+	background-color: var(--color-background-secondary-button);
+	border-radius: 1.5rem;
+	padding: 20px;
+	column-gap: 1em;
+	row-gap: 0.7em;
+}
+
+main section:nth-of-type(2) ul li div {
+	width: 60px;
+	height: 60px;
+	color: var(--white-font-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-background-bestel);
+	border-radius: 50%;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+main section:nth-of-type(2) ul li div img {
+	width: 53%;
+	height: auto;
+	object-fit: cover;
+	object-position: center;
+}
+
+main section:nth-of-type(2) ul li h4 {
+	color: var(--secondary-font-color);
+	margin: 0;
+	font-size: 1.4em;
+	word-spacing: -7px;
+	line-height: 1.2em;
+}
+
+main section:nth-of-type(2) ul li p {
+	font-size: 0.85em;
+	color: var(--Third-font-color);
+	margin: 0;
+	line-height: 1.7em;
+}
+
+main section:nth-of-type(2) ul li:nth-of-type(2) div:first-child {
+	background-color: var(--color-sticker-background);
+}
+
+main section:nth-of-type(2) a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 20px auto;
+	padding: 15px 30px;
+	color: var(--white-font-color);
+	background-color: var(--color-background-main-button);
+	border-radius: 7.48em;
+	font-weight: bold;
+}
+
+main section:nth-of-type(3) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(../images/mobile_app.svg);
+	background-size: 250%;
+	background-repeat: no-repeat;
+	background-position: 50% 500%;
+	background-color: var(--color-background-App);
+	border-radius: 1.5em;
+	height: 40em;
+	z-index: 3;
+}
+
+main section:nth-of-type(3) h4 {
+	text-transform: uppercase;
+	color: var(--white-font-color);
+}
+
+main section:nth-of-type(3) p {
+	color: var(--white-font-color);
+	text-align: center;
+}
+
+main section:nth-of-type(4),
+main section:nth-of-type(5) {
+	height: fit-content;
+}
+
+main section:nth-of-type(4) div,
+main section:nth-of-type(5) div {
+	width: 100%;
+	height: 24em;
+	border-radius: 1.5em;
+	background-image: url('../images/heropening.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+main section:nth-of-type(4) div::after,
+main section:nth-of-type(5) div::after {
+	content: '';
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 20px;
+	bottom: -40px;
+	background-image: url('../images/eerste_icon.png');
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-color: var(--color-sticker-background);
+	background-position: center;
+	border-radius: 50%;
+}
+
+main section:nth-of-type(5) div {
+	background-image: url('../images/gluten.png');
+
+}
+
+main section:nth-of-type(5) div::after {
+	background-image: url('../images/smiley_face2.svg');
+	background-color: var(--color-background-store-finder);
+
+}
+
+main section:nth-of-type(4) h3,
+main section:nth-of-type(5) h3 {
+	color: var(--secondary-font-color);
+	font-size: 2em;
+	font-weight: bold;
+	text-wrap: balance;
+	font-family: "Dunkin Sans";
+	margin-top: 3rem;
+
+
+}
+
+main section:nth-of-type(5) h3 {
+	color: var(--main-font-color);
+
+}
+
+
+
+
+
+main section:nth-of-type(4) p,
+main section:nth-of-type(5) p {
+	color: var(--Third-font-color);
+	font-size: 1.2em;
+	margin-bottom: 0;
+	z-index: 333;
+
+}
+
+
+main section:nth-of-type(4) a,
+main section:nth-of-type(5) a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 20px auto;
+	padding: 15px 30px;
+	color: var(--white-font-color);
+
+	background-color: var(--color-background-main-button);
+	border-radius: 7.48em;
+	font-weight: bold;
+}
+
+
+/* .carousel {
+	position: relative;
+width: 400px;
+height: 300px;
+margin: 50px auto;
+padding: 20px;
+border: 1px #ccc;
+background-color: #86b136;
+screencapture-127-0-0-1-5500-2024-09-30-01_26_56
+}
+ */
+
+/* screencapture-127-0-0-1-5500-2024-09-30-01_26_56 */
+
+
+/* article-carousel */
+
+main article {
+	height: fit-content;
+	position: relative;
+	/* background-color: #99d6ea; */
+	width: 89%;
+}
+
+main article h3 {
+	font-family: "Dunkin Sans";
+	font-size: 4em;
+	text-transform: uppercase;
+	color: var(--secondary-font-color);
+	line-height: 1em;
+	margin: 0;
+	margin-bottom: 3.5rem;
+	overflow: hidden;
+
+}
+
+main article h3 span {
+	display: block;
+	width: 3em;
+	color: var(--main-font-color);
+
+}
+
+main article p:first-of-type {
+	width: 8rem;
+	height: 2.5rem;
+	color: var(--white-font-color);
+	background-color: var(--color-background-store-finder);
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-family: "Dunkin Sans";
+	font-weight: bold;
+	text-align: center;
+	border-radius: 2em;
+	padding: 0.2em;
+
+}
+
+main article p:nth-of-type(2) {
+	font-family: "Dunkin Sans";
+	color: var(--color-slider-text);
+	font-weight: bold;
+	font-size: 1.5em;
+	word-spacing: -0.4em;
+
+
+}
+
+/* bron: https://codepen.io/shooft/pen/mdBOZLz */
+main article ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	gap: 2em;
+
+	display: flex;
+	/* overflow: hidden; */
+	/* scroll-snap-type: inline mandatory; */
+	overflow-x: scroll;
+
+
+
+
+	/* Zorgt voor vloeiend scrollen */
+	scroll-behavior: smooth;
+
+
+
+}
+
+main article ul::-webkit-scrollbar {
+	display: none;
+}
+
+main article ul li {
+	padding: 1.5em;
+	border-radius: 1.5em;
+	flex-basis: 100%;
+	flex-shrink: 0;
+	/* snappen als er gescrolled wordt - andere helft bij ul */
+	scroll-snap-align: center;
+	box-shadow: inset 0em 0em 0em 0.1em #aaaaaa;
+
+
+}
+
+main article ul li div {
+	width: 100%;
+	height: 15em;
+	border-radius: 1.5em;
+	background-image: url('../images/4_maart.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+
+}
+
+main article ul li:nth-of-type(2) div {
+	background-image: url('../images/veggan.jpg');
+}
+
+main article button {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: rgb(170, 170, 170);
+	background-color: #aaaaaa2b;
+	position: relative;
+	margin-top: 2em;
+	left: 7.5rem;
+	width: 3rem;
+	height: 3rem;
+	border: none;
+	border-radius: 50%;
+}
+
+main article a {
+
+	text-decoration: none;
+	color: var(--white-font-color);
+	background-color: var(--color-background-main-button);
+	position: absolute;
+	top: 1rem;
+	right: 0rem;
+	width: 8rem;
+	height: 2.5rem;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-family: "Dunkin Sans";
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2em;
+
+}
+main article button:hover{
+	background-color: var(--color-background-main-button);
+	color: var(--white-font-color);
+	
+}
+main article button:last-of-type{
+	transform: rotate(180deg);
+}
+
+
+
+
+
+/* section zes */
+
+main section:nth-of-type(6) {
+	height: 43em;
+	border-radius: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 1.5em;
+	background-color: var(--color-background-store-finder);
+	padding: 1em 2em;
+
+}
+
+
+main section:nth-of-type(6) div {
+	padding: 0;
+	display: flex;
+}
+
+main section:nth-of-type(6) div::before {
+	content: "";
+	display: block;
+	background-color: var(--color-background-secondary-button);
+	width: 5.5em;
+	height: 5.5em;
+	position: absolute;
+	right: 3em;
+	z-index: 1;
+	border-radius: 50%;
+	background-image: url("../images/dnkn_sticker.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotate(-20deg);
+	box-shadow: 0.1em 0.2em 0.5em #0000006d;
+
+}
+
+main section:nth-of-type(6) div img {
+	width: 17em;
+	height: 17em;
+	transform: scale(1.05);
+	object-fit: cover;
+	border-radius: 50%;
+	border: 10px solid white;
+
+}
+
+
+/* bron */
+/* https://www.youtube.com/shorts/fkQQhw_ZrIw */
+main section:nth-of-type(6) h4 {
+	color: var(--white-font-color);
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	word-spacing: -0.35em;
+	line-height: 0.94em;
+	text-wrap: balance;
+
+}
+
+main section:nth-of-type(6) a {
+	text-decoration: none;
+	background-color: var(--color-background-secondary-button);
+	color: var(--secondary-font-color);
+	font-family: "Dunkin Sans";
+	font-weight: bold;
+	font-size: 0.5em;
+	padding: 20px;
+	border-radius: 5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+.intro {
+	position: fixed;
+	top: 0%;
+	height: 100%;
+	width: 100%;
+	background: var(--color-background-intro);
+	z-index: 100000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation-name: moveTotop;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes moveTotop {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-100%);
+		/* display: none; */
+	}
+}
+
+.intro div p {
+	color: var(--white-font-color);
+	font-family: 'Dunkin Sans', sans-serif;
+	color: var(--white-font-color);
+	font-size: 4em;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+.intro div p:first-of-type {
+	margin: 0;
+	height: 100%;
+	animation-name: showingLetter;
+	animation-duration: 0.6s;
+	animation-delay: 0s;
+	/* animation: showingLetter 0.6s 0s, hidding 0.5s 2s; */
+
+}
+
+.intro div p:nth-of-type(2) {
+	/* animation-delay: 0.2s; */
+	animation: showingLetter 0.6s 0.2s;
+	/* , hidding 0.5s 2s; */
+
+
+
+}
+
+.intro div p:nth-of-type(3) {
+	/* animation-delay: 0.4s; */
+	animation: showingLetter 0.6s 0.4s;
+	/* , hidding 0.5s 2s; */
+
+
+
+}
+
+.intro div p:nth-of-type(4) {
+	/* animation-delay: 0.6s; */
+	animation: showingLetter 0.6s 0.6s;
+	/* , hidding 0.5s 2s; */
+
+
+
+}
+
+.intro div p:nth-of-type(5) {
+	/* animation-delay: 0.8s; */
+	animation: showingLetter 0.6s 0.8s;
+	/* , hidding 0.5s 2s; */
+
+
+
+}
+
+.intro div {
+	display: flex;
+	flex-direction: row;
+	animation-name: hidding;
+	animation-duration: 0.5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes showingLetter {
+	0% {
+		transform: scale(0);
+	}
+
+	50% {
+		transform: scale(1.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+
+}
+
+
+@keyframes hidding {
+	0% {
+		transform: scale(1);
+		opacity: 100%;
+	}
+
+	50% {
+		transform: scale(1.3);
+
+	}
+
+	100% {
+		transform: scale(0);
+		opacity: 50%;
+	}
+}
+
+
+footer::before {
+	content: "";
+	display: block;
+	background-color: #f5f5f5;
+	width: 11em;
+	height: 11em;
+	position: absolute;
+	top: -4.5em;
+	border-radius: 50%;
+	background-image: url("../images/dnkn_sticker.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	transform: rotate(-20deg);
+	box-shadow: 0.1em 0.2em 0.5em #0000006d;
+
+
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+}
+
+footer ul li {
+	list-style: none;
+}
+
+footer ul li a {
+	text-decoration: none;
+}
+
+footer>ul:first-of-type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+	width: 100%;
+	padding-top: 8em;
+
+
+	background-color: #ff6e0c;
+}
+
+footer>ul:first-of-type li {
+	width: 89%;
+	height: 4em;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--white-font-color);
+
+	background-color: rgb(232 64 46 / 75%);
+	border-radius: 7.48em;
+}
+
+footer>ul:first-of-type li a {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: var(--white-font-color);
+
+
+}
+
+footer>ul li:last-of-type {
+	background-color: transparent;
+}
+
+footer>ul li:last-of-type ul {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+
+
+}
+
+footer>ul li:last-of-type ul li {
+	background-color: white;
+	width: 2em;
+	height: 2em;
+	border-radius: 100%;
+	/* gap: 10px; */
+}
+
+footer>ul li:last-of-type ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+
+}
+
+
+
+footer>ul li:last-of-type ul li img {
+	width: auto;
+	height: 40%;
+}
+
+/* laatset ul in de footer */
+footer>ul:last-of-type {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: whitesmoke;
+	align-items: center;
+	width: 100%;
+	height: 7rem;
+	gap: 5px;
+	/* text-wrap: balance; */
+	padding-bottom: 5.7rem;
+
+
+}
+
+footer>ul:last-of-type ul li {
+	width: fit-content;
+
+
+
+}
+
+
+footer>ul:last-of-type li a {
+	width: fit-content;
+	text-align: center;
+	text-wrap: nowrap;
+	color: var(--Third-font-color);
+	font-size: 9px;
+	padding: 0em 0.6em;
+	text-wrap: balance;
+	line-height: 1.5;
+	/* font-weight: bold;  */
+
+}
+
+
+
+/* dit voo de laatste a in de footer */
+
+footer div {
+	background-color: whitesmoke;
+	width: 100%;
+	height: 7em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	/* position: sticky;
+	/* top: 0; */
+}
+
+footer div a {
+	width: 89%;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background-color: var(--color-background-main-button);
+	color: var(--white-font-color);
+	border-radius: 7.48em;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+}
