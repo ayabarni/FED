@@ -113,17 +113,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
-
-
-  | Thomas      | Braham          | Aya    | Joy       |
-  | Hoe maken we vormen? Met vector of images? | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
@@ -154,14 +143,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---          | ---              |
   | Hoe zorg ik dat mijn header van kleur verandert, als ik voorbij een bepaald punt op mijn pagina ben?  | Hoe krijg ik de pijl van de details element aan de andere kant van de summary?    | hoe zorg ik dat een deel van de header vast blijven tijdnes het scrollen (position: fixed en sticky niet gewerkt)  | en dan ik dat    |
   | Is het echt verkeerd om dingen te positionen met paddings en margins?            | Moest je nou je hele main een class geven, of per element?              | Mijn elementen schuiven naar rechts toe en ik weet niet waar ik een fout heb staan in de code. Alles staat scheef hellup!!!!          | ...              |
-
-
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -247,8 +228,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
+## Surface plane
+ 1.Custom themes(kerst)
+ 2.Geluid(merry christmas liedje)
+ 3.Animaties(loading)
+ 4.Custom properties
+ 5.Scroll animaties
 
 ## Bronnenlijst
 
@@ -259,8 +244,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1.  kerst boom icon/thema kerst 
+  https://icon-sets.iconify.design/twemoji/christmas-tree/
+  
+  2. Kerst song
+  https://www.youtube.com/watch?v=g-OF7KGyDis  
+
+  3. Intro animatie werkte niet helemaal goed, waar alle letters in op één regel staan en de animatie werkt allen op de eerste letter
+  https://chatgpt.com/c/6722784c-d8d4-8009-a3b3-a6fdb8efef68
+
+  4. Tweede pagina: hier ind e eerste section moest ik een filter op de foto toevoegen maar de h2 keerg ook de filter mee
+  https://chatgpt.com/c/6726221d-a870-8009-b15c-7ba2289024f4
+
+  5. ik heb twee menus in dezelfde JS pagian ingezit maar ze werken niet want de biede menus hebben dezelfde funtion daardoor heb hun opgedeeld in twee aparte JS filles.
+  https://chatgpt.com/c/672753ba-8e94-8009-b59d-6f87c4d2623a
+
+  6. Dunkin fonts:
+  https://www.onlinewebfonts.com/download/4ba6a0aa699286a040c28bf72ea53fa3
+
+  7. Hier had pobleem met nemu knop, in het eerste pagina eant ik heb geen (aria-label)toegevoegd
+  https://chatgpt.com/c/67211ad8-e770-8009-ac95-684eecc53592
+
+  8. Kerst thema background. Ik heb hem ook in Figma een blur effect toegevoegd
+  https://nl.pinterest.com/pin/57069120271792838/
 
 </details>

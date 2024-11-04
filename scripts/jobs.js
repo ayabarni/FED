@@ -1,29 +1,21 @@
-// JavaScript Document
+// open nav in jobs pagina
+var jobsMenuButton = document.querySelector(".hamburger-btn");
 
+jobsMenuButton.addEventListener("click",toggleJobsMenu);
+var jobsNav = document.querySelector(".jobs-Nav");
 
-// open nav in index pagina
-var openButton = document.getElementById("menuButton");
-
-openButton.addEventListener("click", toggleIndexMenu);
-var deNav = document.querySelector(".index-Nav");
-
-function toggleIndexMenu() {
-
-    deNav.classList.toggle("toonMenu");
-
-    openButton.classList.toggle("navOpen");
+function toggleJobsMenu() {
+    
+    jobsNav.classList.toggle("jobsmenu");
+    jobsMenuButton.classList.toggle("jobsmenuOpen");
 }
 
-
-// kerst butto thema
-
+// https://chatgpt.com/c/672753ba-8e94-8009-b59d-6f87c4d2623a
 
 var kerstButton = document.querySelector("main>button");
 var body = document.querySelector("body");
-var KerstAudio = document.querySelector("audio");
-
+var KerstAudio = document.querySelector("audio"); 
 let playedAudio = false;
-
 
 kerstButton.addEventListener("click", toggleKerstthema);
 
@@ -35,14 +27,18 @@ function toggleKerstthema() {
     if (playedAudio == false) {
         KerstAudio.play();
         playedAudio = true;
+        
+
 
 
     } else { KerstAudio.pause(); 
         playedAudio = false;
+        
     }
+       
 
+} 
 
-}
 
 // scroll animatie
 
@@ -63,9 +59,8 @@ function fadeIn() {
         var element = elementsArray[i];
         
         // Bereken de afstand van de bovenkant van het element tot de onderkant van het viewport-venster, minus een kleine marge van 20 pixels.
-        var distInView = element.getBoundingClientRect().top - window.innerHeight + 150;
+        var distInView = element.getBoundingClientRect().top - window.innerHeight + 40;
         
-
         if (distInView < 0) {
             element.classList.add("Blok-inView");
             
@@ -78,34 +73,3 @@ function fadeIn() {
     } }
 
 fadeIn()
-
-
-
-
-
-
-
-
-
-// news carousel
-
-var prevButton = document.querySelector('main article button:first-of-type');
-var nextButton = document.querySelector('main article button:last-of-type');
-var carousel = document.querySelector('main article ul');
-const scrollAmount = 500; // 500px 
-
-nextButton.addEventListener('click', goToNextElement);
-function goToNextElement() {
-    carousel.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth' // Zorgt voor vloeiend scrollen
-    });
-}
-
-prevButton.addEventListener('click', goToPrevElement);
-function goToPrevElement() {
-    carousel.scrollBy({
-        left: -scrollAmount,
-        behavior: 'smooth' // Zorgt voor vloeiend scrollen
-    });
-}

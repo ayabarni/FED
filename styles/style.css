@@ -26,13 +26,19 @@
 
 :root {
 	/* startje */
+	--main-orange-color: #ff6e0c;
+	--secondary-orange-color: rgb(232 64 46 / 75%);
 	--color-text: #111;
+	--color-span-nav: #000000;
 	--color-background: #eee;
+	--color-background-jobs: #ffffff;
 	--color-background-nav: #ffffff;
 	--color-background-store-finder: #e01488;
 	--color-background-App: #71c5e8;
 	--color-background-main-button: #ff6e0c;
 	--color-background-secondary-button: #ffffff;
+	--color-background-afhalen: #f950ad;
+
 	--font-size-h2: 3em;
 	--font-size-h3: 4.3em;
 	--main-font-color: #ff6e0c;
@@ -41,14 +47,143 @@
 	--white-font-color: #ffffff;
 	--color-slider-text: #512d00;
 	--color-sticker-background: #ff6e0c;
-	--color-background-bestel:#e01488;
-	--color-background-intro:  #ff6e0c;
+	--color-sticker-dunkin: #ffffff;
+	--color-background-bestel: #e01488;
+	--color-background-intro: #ff6e0c;
+	--color-background-list: white;
 	/* teede pagina */
-	--color-font-heding:  rgb(198, 54, 99);
+	--color-font-heding: rgb(198, 54, 99);
 	--color-font-paragraph: rgb(198, 54, 99);
+	--color-nav-button: rgba(0, 0, 0, 0.1);
+	--color-background-footer: rgba(62, 52, 47, 1);
+
+	--order-now-button: #ff6e0c;
+	--order-now-button-background: whitesmoke;
 
 }
 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--main-orange-color: rgb(206, 206, 206);
+		--secondary-orange-color: #4d4d4d;
+		--color-background: #2d2c2c;
+		--color-background-nav: #000000;
+		--color-span-nav: #e01488;
+		--color-background-secondary-button: #000000;
+		--order-now-button: rgb(206, 206, 206);
+		--order-now-button-background: #4d4d4d;
+		--color-slider-text: white;
+
+
+		--color-background-jobs: #2d2c2c;
+		--color-text: #faf7f7;
+		--color-nav-button: #2d2c2c;
+
+		--white-font-color: #424242;
+
+
+
+
+	}
+
+
+}
+
+body.kerstTheme {
+
+	--main-orange-color: #F20544;
+	--secondary-orange-color: #8C0303;
+	--color-background: white;
+	--order-now-button: #F20544;
+	--white-font-color: #274002;
+	--color-slider-text: #274002;
+	--color-background-nav: #62733D;
+	--color-background-store-finder: #62733D;
+	--color-sticker-background: #F20544;
+	--color-sticker-dunkin: #F20544;
+	--order-now-button-background: #62733D;
+	--color-background-bestel: #62733D;
+	--secondary-font-color: #274002;
+	--color-background-secondary-button: #A67F5D;
+	--color-background-afhalen: #84906a71;
+	--Third-font-color: #274002;
+	--color-text: #274002;
+	--color-background-jobs: #A67F5D;
+	--color-font-heding: #274002;
+	--color-font-paragraph: #274002;
+	--color-background-footer: #62733D;
+	background-image: url(../images/back.png);
+	background-size: 70%;
+}
+
+main>button {
+	background-color: red;
+	background-color: transparent;
+	filter: drop-shadow(0 0 0.5em rgb(9, 9, 9));
+	border: none;
+	height: 5em;
+	width: 5em;
+	position: fixed;
+	z-index: 1000;
+	bottom: 10em;
+	right: 0.4em;
+	padding: 0;
+
+}
+
+main>button svg {
+	height: 100%;
+	width: auto;
+	object-fit: cover;
+	
+}
+
+main>button.dance{
+	animation-name: dance;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform: rotate(0deg);
+	animation-timing-function: linear;
+	
+	
+
+}
+ @keyframes dance {
+	0% {
+		transform: rotate(45deg) scaleY(1.2);
+		
+
+	}
+	/* 25% {
+		transform: rotate(45deg);
+
+	} */
+	/* 50%{
+		transform: rotate(45deg);
+
+	} */
+	/* 75% {
+		transform: rotate(-45deg);
+
+	}  */
+	100%{
+		transform: rotate(-45deg) scaleY(0.8);
+
+	}
+
+}
+
+
+.Blok{
+	opacity: 0;
+	transition: 2s;
+}
+.Blok-inView{
+	opacity: 1;
+	
+}
 
 body {
 	width: 100%;
@@ -56,8 +191,7 @@ body {
 	margin: auto;
 	font-family: "Dunkin Sans";
 	font-weight: normal;
-	background-color:  var(--color-background);
-
+	background-color: var(--color-background);
 
 }
 

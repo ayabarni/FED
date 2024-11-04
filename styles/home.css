@@ -7,7 +7,7 @@ header {
 }
 
 header p {
-	background-color: var(--color-background-main-button);
+	background-color: var(--main-orange-color);
 	width: 100%;
 	height: 3em;
 	text-align: center;
@@ -45,7 +45,9 @@ header div:nth-of-type(1) button {
 	width: 12%;
 	height: 40%;
 }
-
+header div:nth-of-type(1) button:first-of-type{
+	background-color: var(--color-background);
+}
 header div:nth-of-type(1) button img {
 	height: auto;
 }
@@ -89,7 +91,7 @@ header nav {
 
 }
 
-/* menu knop */
+/* menu button */
 
 header nav.toonMenu {
 	transform: translateY(0%);
@@ -119,7 +121,7 @@ header nav ul li:last-of-type {
 	background-color: transparent;
 }
 
-Header nav ul li:last-of-type ul {
+header nav ul li:last-of-type ul {
 	display: flex;
 	flex-direction: row;
 	gap: 1em;
@@ -182,32 +184,9 @@ header p {
 	justify-content: center;
 	align-items: center;
 }
-
-/* nav-button */
-/* header nav span{
-
-} */
-
-/* header div nav ul li{
-	text-decoration: none;
-} */
-/* header div:nth-of-type(2) img:nth-of-type(2) {
-	width: 50%;
-
-} */
-
-
-
 /* menubutton */
 #menuButton {
     background-color: var(--color-background);
-    /* border: none; */
-    /* cursor: pointer; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px; */
 	display: grid;
 	grid-template-rows: 1fr;
 	place-items: center;
@@ -224,7 +203,7 @@ header p {
 	display: block;
 	width: 1.4em;
 	height: 0.1em;
-	background-color: #000000;
+	background-color: var(--color-span-nav);
 	transition: 0.4s;
 } 
 #menuButton span:first-of-type{
@@ -427,7 +406,7 @@ main>section:first-of-type section:nth-of-type(2) button:first-of-type {
 
 main>section:first-of-type section:nth-of-type(2) button:last-of-type {
 	color: var(--white-font-color);
-	background-color: #f950ad;
+	background-color:var(--color-background-afhalen);
 
 }
 
@@ -537,7 +516,7 @@ main section:nth-of-type(2) a {
 	margin: 20px auto;
 	padding: 15px 30px;
 	color: var(--white-font-color);
-	background-color: var(--color-background-main-button);
+	background-color: var(--main-orange-color);
 	border-radius: 7.48em;
 	font-weight: bold;
 }
@@ -651,7 +630,7 @@ main section:nth-of-type(5) a {
 	padding: 15px 30px;
 	color: var(--white-font-color);
 
-	background-color: var(--color-background-main-button);
+	background-color: var(--main-orange-color);
 	border-radius: 7.48em;
 	font-weight: bold;
 }
@@ -688,7 +667,7 @@ main article h3 {
 	color: var(--secondary-font-color);
 	line-height: 1em;
 	margin: 0;
-	margin-bottom: 3.5rem;
+	margin-bottom: 1em;
 	overflow: hidden;
 
 }
@@ -799,7 +778,7 @@ main article a {
 
 	text-decoration: none;
 	color: var(--white-font-color);
-	background-color: var(--color-background-main-button);
+	background-color: var(--main-orange-color);
 	position: absolute;
 	top: 1rem;
 	right: 0rem;
@@ -816,7 +795,7 @@ main article a {
 
 }
 main article button:hover{
-	background-color: var(--color-background-main-button);
+	background-color: var(--main-orange-color);
 	color: var(--white-font-color);
 	
 }
@@ -851,7 +830,7 @@ main section:nth-of-type(6) div {
 main section:nth-of-type(6) div::before {
 	content: "";
 	display: block;
-	background-color: var(--color-background-secondary-button);
+	background-color: var(--color-sticker-dunkin);
 	width: 5.5em;
 	height: 5.5em;
 	position: absolute;
@@ -1045,7 +1024,7 @@ main section:nth-of-type(6) a {
 footer::before {
 	content: "";
 	display: block;
-	background-color: #f5f5f5;
+	background-color: var(--color-sticker-dunkin );
 	width: 11em;
 	height: 11em;
 	position: absolute;
@@ -1082,7 +1061,7 @@ footer>ul:first-of-type {
 	padding-top: 8em;
 
 
-	background-color: #ff6e0c;
+	background-color:var(--main-orange-color);
 }
 
 footer>ul:first-of-type li {
@@ -1092,18 +1071,14 @@ footer>ul:first-of-type li {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--white-font-color);
-
-	background-color: rgb(232 64 46 / 75%);
+	background-color: var(--secondary-orange-color);
 	border-radius: 7.48em;
 }
 
 footer>ul:first-of-type li a {
 	font-size: 0.8rem;
 	font-weight: bold;
-	color: var(--white-font-color);
-
-
+	color: var(--color-background-list);
 }
 
 footer>ul li:last-of-type {
@@ -1123,7 +1098,7 @@ footer>ul li:last-of-type ul li {
 	width: 2em;
 	height: 2em;
 	border-radius: 100%;
-	/* gap: 10px; */
+	
 }
 
 footer>ul li:last-of-type ul li a {
@@ -1148,7 +1123,8 @@ footer>ul:last-of-type {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	background-color: whitesmoke;
+	/* background-color: whitesmoke; */
+	background-color: var(--order-now-button-background);
 	align-items: center;
 	width: 100%;
 	height: 7rem;
@@ -1172,6 +1148,7 @@ footer>ul:last-of-type li a {
 	text-align: center;
 	text-wrap: nowrap;
 	color: var(--Third-font-color);
+	
 	font-size: 9px;
 	padding: 0em 0.6em;
 	text-wrap: balance;
@@ -1184,8 +1161,9 @@ footer>ul:last-of-type li a {
 
 /* dit voo de laatste a in de footer */
 
-footer div {
-	background-color: whitesmoke;
+main > div {
+	/* background-color: whitesmoke; */
+	background-color: var(--order-now-button-background);
 	width: 100%;
 	height: 7em;
 	display: flex;
@@ -1199,14 +1177,14 @@ footer div {
 	/* top: 0; */
 }
 
-footer div a {
+main > div a {
 	width: 89%;
 	height: 3rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	background-color: var(--color-background-main-button);
+	background-color: var(--order-now-button);
 	color: var(--white-font-color);
 	border-radius: 7.48em;
 	font-weight: bold;
