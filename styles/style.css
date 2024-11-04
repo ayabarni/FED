@@ -1,6 +1,8 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+/* bron font: https://www.onlinewebfonts.com/download/4ba6a0aa699286a040c28bf72ea53fa3 
+*/
 @font-face {
 	font-family: "Dunkin Sans";
 	src: url("../dunkin-fonts-woff/Dunkin-Sans.woff") format("woff");
@@ -8,7 +10,6 @@
 	font-style: normal;
 	font-display: fallback;
 }
-
 @font-face {
 	font-family: "Dunkin Sans";
 	src: url("../dunkin-font-woff/Dunkin-Bold.woff") format("woff");
@@ -17,13 +18,11 @@
 	font-display: fallback;
 
 }
-
 *,
 *::after,
 *::before {
 	box-sizing: border-box;
 }
-
 :root {
 	/* startje */
 	--main-orange-color: #ff6e0c;
@@ -56,12 +55,9 @@
 	--color-font-paragraph: rgb(198, 54, 99);
 	--color-nav-button: rgba(0, 0, 0, 0.1);
 	--color-background-footer: rgba(62, 52, 47, 1);
-
 	--order-now-button: #ff6e0c;
 	--order-now-button-background: whitesmoke;
-
 }
-
 @media (prefers-color-scheme: dark) {
 	:root {
 		--main-orange-color: rgb(206, 206, 206);
@@ -73,22 +69,14 @@
 		--order-now-button: rgb(206, 206, 206);
 		--order-now-button-background: #4d4d4d;
 		--color-slider-text: white;
-
-
 		--color-background-jobs: #2d2c2c;
 		--color-text: #faf7f7;
 		--color-nav-button: #2d2c2c;
-
-		--white-font-color: #424242;
-
-
-
-
+		--white-font-color: #1c0808;
+		--color-font-heding:rgb(231 167 187);
+		--color-font-paragraph: rgb(231 167 187);
 	}
-
-
 }
-
 body.kerstTheme {
 
 	--main-orange-color: #F20544;
@@ -115,7 +103,6 @@ body.kerstTheme {
 	background-image: url(../images/back.png);
 	background-size: 70%;
 }
-
 main>button {
 	background-color: red;
 	background-color: transparent;

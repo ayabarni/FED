@@ -261,8 +261,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   6. Dunkin fonts:
   https://www.onlinewebfonts.com/download/4ba6a0aa699286a040c28bf72ea53fa3
+  https://convertio.co/nl/download/bc93dfc3fdec17afe29ebcb29408be453efcfc/
 
-  7. Hier had pobleem met nemu knop, in het eerste pagina eant ik heb geen (aria-label)toegevoegd
+  7. Hier had pobleem met nemu knop, in het eerste pagina ik heb geen (aria-label)toegevoegd want ik dacht dat geen nuttig heeft.
   https://chatgpt.com/c/67211ad8-e770-8009-ac95-684eecc53592
 
   8. Kerst thema background. Ik heb hem ook in Figma een blur effect toegevoegd

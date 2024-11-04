@@ -242,9 +242,9 @@ main section:nth-of-type(3) div {
 
 main section:nth-of-type(3) div blockquote {
 	color: var(--color-font-heding);
-	font-size: 1.1rem;
+	font-size: 1.1em;
 	font-weight: bold;
-	word-spacing: 1px;
+	word-spacing: -0.2em;
 	margin: 0px;
 }
 
@@ -254,7 +254,7 @@ main section:nth-of-type(3) div p {
 }
 
 main section:nth-of-type(3) ul {
-	margin-top: 3rem;
+	margin-top: 3em;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 6em 1fr;
@@ -352,7 +352,7 @@ main section:nth-of-type(5) h2 {
 	color: var(--color-font-paragraph);
 	font-size: 1.9em;
 	font-weight: bold;
-	word-spacing: -15px;
+	word-spacing: -0.3em;
 	text-wrap: balance;
 	text-align: left;
 	margin: 0;
@@ -372,13 +372,13 @@ main section:nth-of-type(5) p{
 
 
 main section:nth-of-type(5) article {
-	padding: 20px;
+	padding: 1.25em;
 	width: 100%;
 	height: 19.5em;
 	box-shadow: inset 0em 0em 0em 0.1em #dddbdb;
 	border-radius: 0.5em;
 }
-main section:nth-of-type(5) article>p{
+main section:nth-of-type(5) article>h2{
 	color: var(--main-font-color);
 	font-size: 1em;
 	word-spacing: -0.3em;
@@ -427,12 +427,13 @@ footer ul li a {
 }
 
 
-footer>img {
+footer>a img {
 	width: 40%;
 	height: auto;
+	position: relative;
+	left: calc(50% - 40%/2)
 
 }
-
 footer>ul:first-of-type {
 	display: flex;
 	flex-direction: column;

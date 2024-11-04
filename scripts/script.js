@@ -79,14 +79,6 @@ function fadeIn() {
 
 fadeIn()
 
-
-
-
-
-
-
-
-
 // news carousel
 
 var prevButton = document.querySelector('main article button:first-of-type');
