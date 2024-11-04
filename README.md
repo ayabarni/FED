@@ -162,10 +162,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+Ik heb een toegankelijkheidstest gedaan nadat ik klaar was met het vertalen van de hele site.
+Ik vond geen verschil met de eerste keer toen de site nog helemaal niet af was.
+Met de schermlezer kon ik het volgende doen:
 
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+-Navigeren naar boven en beneden door pijlen en spatie. Dit was gemakkelijk en ongecompliceerd.
+-Ik kon door de links op de pagina navigeren met de k, en het las de alt als die er was.
+Toen ik tussen de nummers 1, 2, 3 en 4 navigeerde, kon het me alle koppen in volgorde voorlezen vanaf het begin van de pagina, of wanneer ik naar beneden scrolde met de pijlen.
+-Ik heb de test verschillende keren gedaan, en wat elke keer niet goed werkte was het lezen van de koppen door op H te drukken. Soms begon het geleidelijk alle koppen te lezen en wanneer het de nieuwe kop bereikte, las het de letters afzonderlijk en niet als één woord.  Soms leest het geen heading tenzij ik op k druk (wat me tussen links brengt) en als ik dan op H druk, brengt het me alleen naar de heading dat volgt op de link.
+
+Vertaald met DeepL.com (gratis versie)
 
 </details>
 
@@ -212,20 +218,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/defult-home.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/defult-jobs.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/darkmode-hoem.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/darkmode-jobs.png" width="375px" alt="uitomst opdracht 1">
+   <img src="readme-images/kerst-home.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/kerst-jobs.png" width="375px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Wat wel acceptabel moeilijk was, was de Dark Mode. Dit was de eerste keer dat ik de Dark Mode deed en ik heb er echt veel van geleerd. Het is echt tijdrovend, vooral omdat ik zorgvuldig de kleur van de tekst moest afstemmen op de achtergrond in elke sectie om het goed leesbaar te maken voor de schermlezer. Het heeft me dus veel tijd gekost.  
+  Een van de dingen die ik heel goed heb geleerd tijdens het programmeren van deze website is animatie. Ik heb verschillende keren animatie gebruikt voor verschillende elementen totdat ik het heel goed begreep.
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
+  Een van de dingen die moeilijk was, was al het JS-werk.  Ik heb veel tijd besteed aan het uiteindelijke resultaat van alle elementen die JS nodig hadden. Er was veel vallen en opstaan totdat ik het huidige uiterlijk van de Mino op beide pagina's had. 
 
 
 ## Surface plane
