@@ -3,7 +3,7 @@
 /**************/
 @font-face {
 	font-family: "Dunkin Sans";
-	src: url("../dunkin-fonts/Dunkin-Sans.woff") format("woff");
+	src: url("../dunkin-fonts-woff/Dunkin-Sans.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: fallback;
@@ -11,7 +11,7 @@
 
 @font-face {
 	font-family: "Dunkin Sans";
-	src: url("../dunkin-fonts/Dunkin-Bold.woff") format("woff");
+	src: url("../dunkin-font-woff/Dunkin-Bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 	font-display: fallback;
